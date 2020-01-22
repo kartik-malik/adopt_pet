@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import SearchParams from "./SearchParams";
-import Details from "./Details";
 import { Router, Link } from "@reach/router";
 import ThemeContext from "./ThemeContext";
 import { useState, useEffect, useContext } from "react";
-import NavBar from "./NavBar";
+import Details from "./Details";
 
 const App = () => {
   const themehook = useState("peru");
@@ -21,4 +20,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default App;
