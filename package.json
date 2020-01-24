@@ -8,7 +8,7 @@
     "dev": "parcel src/index.html",
     "dev:mock": "cross-env PET_MOCK=mock parcel src/index.html",
     "format": "prettier \"src/**/*.{js,html}\" --write",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "lint": "tslint --project ",
     "start": "npm run build && babel-node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,15 +20,13 @@
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
-    "babel-eslint": "^10.0.3",
+    "@types/reach__router": "^1.2.6",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
     "cross-env": "^6.0.3",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.17.0",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
   },
   "dependencies": {
     "@babel/cli": "^7.8.3",
@@ -41,7 +39,8 @@
     "fs": "0.0.1-security",
     "reach": "^1.0.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "tslint": "^6.0.0"
   },
   "browserslist": [
     "last 2 Chrome versions"

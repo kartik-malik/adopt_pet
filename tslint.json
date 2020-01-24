@@ -1,0 +1,10 @@
+{
+  "extends": ["ts-lint:recommended", "tslint-react", "ts-lint-config-prettier"],
+  "rules": {
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-console": false,
+    "jsx-no-lambda": false,
+    "member-ordering": false
+  }
+}
